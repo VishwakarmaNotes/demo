@@ -1,0 +1,15 @@
+<div class="container">
+    <ng-container *ngFor="let item of displayItems">
+        <div class="product padd-btm-12">
+            <div>
+                <img class="img" [src]="item.img" alt="">
+            </div>
+            <div class="medium-text">{{item.Name}}</div>
+            <div class="">₹{{item.price}}</div>
+            <div class="small-text">Location: {{item.Location}}</div>
+            <div class="small-text">Quantity: {{item.qty}}</div>
+            <div class="small-text" *ngIf="!item.qty">Sold Out</div>
+            <div><button>Add to Cart</button></div>
+        </div>
+    </ng-container>
+</div>

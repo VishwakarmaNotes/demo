@@ -1,0 +1,14 @@
+.container{
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    padding: 24px;
+    height: calc(100vh - 57px);
+    overflow: auto;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.img{
+    height: 300px;
+    width: 200px;
+}

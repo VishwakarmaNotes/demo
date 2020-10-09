@@ -1,0 +1,22 @@
+<div class="txt-align-center">
+    <h1>LOGIN</h1>
+</div>
+<!-- username field -->
+<div class="margin-auto padd-btm-12">
+    <div>User Name</div>
+    <div>
+        <input type="text" #username />
+    </div>
+</div>
+<!-- Password field -->
+<div class="margin-auto padd-btm-12">
+    <div>Password</div>
+    <div class="password-box">
+        <input type="password" #password />
+    </div>
+</div>
+
+<!-- submit button -->
+<div class="txt-align-center">
+    <input type="submit" (click)="onSubmit(username.value,password.value)" value="LOGIN" />
+</div>

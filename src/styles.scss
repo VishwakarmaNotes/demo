@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    height: 100%;
+  }
+
+  input {
+    outline: none;
+    width: 250px;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+button{
+    outline: none;
+    cursor: pointer;
+    background-color: #2e6d99;
+    color: white;
+    border: 0;
+    padding: 8px;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    outline: none;
+    cursor: pointer;
+    background-color: #2e6d99;
+    color: white;
+    border: 0;
+}
+
+.txt-align-center{
+    text-align: center;
+}
+
+.padd-btm-12{
+    padding-bottom: 12px;
+}
+
+.margin-auto{
+    width: 250px;
+    margin: auto;
+}

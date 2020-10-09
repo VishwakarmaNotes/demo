@@ -1,0 +1,65 @@
+<div class="txt-align-center">
+    <h1>Sign Up page</h1>
+</div>
+<!-- First Name field -->
+<div class="margin-auto padd-btm-12">
+    <div>First Name</div>
+    <div>
+        <input type="text" [ngModel]="details?.firstName" #firstName />
+    </div>
+</div>
+<!-- Last Name field -->
+<div class="margin-auto padd-btm-12">
+    <div>Last Name</div>
+    <div>
+        <input type="text" [ngModel]="details?.lastName" #lastName />
+    </div>
+</div>
+<!-- email field -->
+<div class="margin-auto padd-btm-12">
+    <div>Email</div>
+    <div>
+        <input type="email" [ngModel]="details?.email" #email />
+    </div>
+</div>
+<!-- email field -->
+<div class="margin-auto padd-btm-12">
+    <div>Password</div>
+    <div>
+        <input type="password" [ngModel]="details?.password" #password />
+    </div>
+</div>
+<!-- Mobile No field -->
+<div class="margin-auto padd-btm-12">
+    <div>Mobile No</div>
+    <div>
+        <input type="number" [ngModel]="details?.number" #no />
+    </div>
+</div>
+<!-- Role field -->
+<div class="margin-auto padd-btm-12">
+    <div>Role</div>
+    <div>
+        <input type="text" [ngModel]="details?.role" #role />
+    </div>
+</div>
+<!-- Gender field -->
+<div class="margin-auto padd-btm-12">
+    <div>Gender</div>
+    <div>
+        <input type="radio" name="gender" value="male" (click)="getGender('male')"> Male
+        <input type="radio" name="gender" value="female" (click)="getGender('female')"> Female
+        <input type="radio" name="gender" value="other" (click)="getGender('other')"> Other
+    </div>
+</div>
+<!-- Date of Birth field -->
+<div class="margin-auto padd-btm-12">
+    <div>Date of Birth</div>
+    <div>
+        <input type="date" [ngModel]="details?.date_of_birth" #date_of_birth />
+    </div>
+</div>
+<!-- submit button -->
+<div class="txt-align-center">
+    <input type="submit" (click)="onSubmit(firstName.value,lastName.value,email.value,password.value,no.value,role.value,date_of_birth.value)" value="Submit" />
+</div>

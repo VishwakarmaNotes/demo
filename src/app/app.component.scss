@@ -1,0 +1,28 @@
+.nav-container{
+  display: grid;
+  grid-template-columns: max-content max-content max-content max-content;
+  color: white;
+  font-weight: 600;
+  background-color: #2e6d99;
+}
+
+.nav-icons{
+  display: grid;
+  place-content: center center;
+  padding: 18px;
+  outline: none;
+  font-size: 18px;
+}
+.container{
+  display: grid;
+  grid-template-rows: max-content 0 1fr;
+  height: 100vh;
+}
+
+.bg-dark-blue-hover:hover{
+  background-color: #1f4a68;
+}
+
+.hand-pointer{
+  cursor: pointer;
+}
